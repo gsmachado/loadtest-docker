@@ -1,0 +1,7 @@
+applications:
+- name: LoadTestFromCloudFoundry
+  memory: 2048M
+  disk_quota: 1G
+  instances: 1
+  health-check-type: none
+  command: loadtest -t 20 -c 10 --rps 10 -k https://www.google.com
