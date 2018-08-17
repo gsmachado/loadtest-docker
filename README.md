@@ -30,7 +30,7 @@ The whole docker command, as an example, would be:
 docker run gsmachado/loadtest-docker bash -c 'loadtest -t 20 -c 10 --rps 10 -k https://www.google.com'
 ```
 
-## Running from a Clodu Foundry application
+## Running from a Cloud Foundry application
 
 The file `manifest-example.yml` provides an example on how to run the load tests within a Cloud Foundry app.
 
@@ -46,9 +46,9 @@ And, at the same time (executing in another terminal), you can check the results
 cf logs LoadTestFromCloudFoundry
 ```
 
-### The advatange
+### Why? What's the advantage?
 
-Well, the real advantage of having load tests packed in a Cloud Foundry app is that you can scale up/down the amount of instances, memory, disk space, etc, etc. Then, your load tests might get more powerful.
+Well, the real advantage of having load tests packed in a Cloud Foundry app is that you can scale up/down the amount of instances, memory, disk space, etc, etc. Then, your load tests might get more "powerful".
 
 Of course, you can orchestrate the load tests app to start, perform the tests, collect the results, and then delete the app. However, this is not covered in this git repo project. If you do it, let me know. :-)
 
